@@ -97,13 +97,13 @@
 	<distributionManagement>
 	
 	    <repository>
-	      <id>admin</id>
+	      <id>nexus</id>
 	      <name>facebook Releases Nexus Repository</name>
 	      <url>http://65.0.122.217:8081/repository/facebook-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
-	      <id>admin</id>
+	      <id>nexus</id>
 	      <name>facebook Snapshot Nexus Repository </name>
 	      <url>http://65.0.122.217:8081/repository/facebook-snapshot/</url>
 	    </snapshotRepository>
