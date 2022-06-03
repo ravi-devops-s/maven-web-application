@@ -22,7 +22,7 @@ stage('sonarqube report'){
 // Deploy application in Tomcat server
 stage('Tomcat'){
     sshagent(['ce0e1265-5025-45d4-8cef-af9782b3aaee']) {
-        sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.232.34.65:/apache-tomcat-9.0.62/webapps/"
+        sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@ip13.232.34.65:/apache-tomcat-9.0.62/webapps/"
     }
 } 
 }
