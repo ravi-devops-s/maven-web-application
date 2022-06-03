@@ -1,6 +1,7 @@
 node{
   echo "jod Name is : ${env.JOB_NAME}"
   echo "node name is: ${env.NODE_NAME}"
+ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
   def mavenHome=tool name:'maven 3.8.5'
    //Get the code from Github
     stage('checkoutcode'){
