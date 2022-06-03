@@ -19,10 +19,10 @@ stage('sonarqube report'){
  stage('artifactory Repository'){
      sh "${mavenHome}/bin/mvn deploy"
  }
-/*// Deploy application in Tomcat server
+// Deploy application in Tomcat server
 stage('Tomcat'){
     sshagent(['ce0e1265-5025-45d4-8cef-af9782b3aaee']) {
-        sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.233.214.33:/apache-tomcat-9.0.62/webapps/"
+        sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@ip13.233.214.33:/apache-tomcat-9.0.62/webapps/"
     }
-} */
+} 
 }
